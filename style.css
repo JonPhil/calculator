@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.calculator {
+    border: solid 2px black;
+    background-color: rgb(134, 134, 133);
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 8px;
+    border-radius: 15px;
+    padding: 30px;
+}
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    min-width: 0;
+}
+@font-face {
+    font-family: digital;
+    src: url(fonts/Digital7-rg1mL.ttf);  
+}
+.screen {
+    border: solid 2px black;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: digital;
+    padding: 10px;
+    flex: .6;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.screen .previous-operand {
+    font-size: 2rem;
+}
+.screen .current-operand {
+    font-size: 3rem;
+}
+input:hover {
+    filter: brightness(60%);
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2.5;
+}
+.btn-group {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.number, .operator, .special2, #equal, #decimal {
+    flex: 1;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 30px;
+    background-color: rgb(209, 208, 208);
+}
+.operator {
+    background-color: cadetblue;
+}
+.special2 {
+    background-color: rgb(72, 72, 73);
+    color: white;
+}
+#equal {
+    background-color: tomato;
+}
